@@ -7,7 +7,7 @@ Tested up to: 4.3
 License: GPLv2 or later
 
 
-WP Twitter Feeds - A simple widget which lets you add your latest tweets in just a few clicks on your website.
+WP Twitter Feeds - A easy widget which lets you add your latest tweets in just a few clicks on your website.
 
 == Description ==
 

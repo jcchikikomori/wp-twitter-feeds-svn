@@ -35,7 +35,7 @@ function wpltf_reg_widget()
 add_filter('plugin_row_meta', 'add_meta_links',10, 2);
 function add_meta_links($links, $file) {
 	if ( strpos( $file, 'wp-latest-twitter-tweets.php' ) !== false ) {
-		$links[] = '<a href="http://wordpress.org/support/plugin/wp-twitter-feeds">Support</a>';
+		$links[] = '<a href="http://vivacityinfotech.net/support">Support</a>';
 		$links[] = '<a href="http://bit.ly/1icl56K">Donate</a>';
 	}
 	return $links;
