@@ -1,13 +1,13 @@
 <?php
 /**
  *Plugin Name: WP Twitter Feeds
- *Contributors: vivacityinfotechjaipur, Planet Interactive
  *Plugin URI: http://www.vivacityinfotech.net/
  *Description: Displays latest tweets from your Twitter account using Twitter oAuth API 1.1.
  *Author: Vivacity Infotech Pvt. Ltd.
  *Version: 1.4.8
  *Author URI: http://www.vivacityinfotech.net/
-* Author Email: support@vivacityinfotech.net
+ *Author Email: support@vivacityinfotech.net
+ *Contributors: vivacityinfotech.jaipur , Planet Interactive
  */
  /* Copyright 2014  Vivacity InfoTech Pvt. Ltd.  (email : support@vivacityinfotech.net)
 
