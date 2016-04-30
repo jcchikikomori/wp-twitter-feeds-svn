@@ -1,13 +1,13 @@
 ﻿=== Plugin Name ===
-Contributors: vivacityinfotech.jaipur,Planet Interactive 
+Contributors: vivacityinfotech.jaipur
 Donate link: http://bit.ly/1icl56K
 Tags:  wp twitter feeds,twitter feeds, twitter timeline,twitter widget,twitter widget for wordpress,wp twitter feeds widget,live tweets, live twitter feeds, tweets, feeds, wp twitter feeds plugin, twitter user tweets,  twitter 1.1, twitter api
 Requires at least: 3.5
-Tested up to: 4.4
+Tested up to: 4.3
 License: GPLv2 or later
 
 
-WP Twitter Feeds - A easy widget which lets you add your latest tweets in just a few clicks on your website.
+WP Twitter Feeds - A simple widget which lets you add your latest tweets in just a few clicks on your website.
 
 == Description ==
 
@@ -74,6 +74,10 @@ Installation consists of following steps:
 6. Create Your Access Token.
 
 7. Make a note of your OAuth Settings.
+
+== Credits ==
+* Thanks to [News Tricker] for great help with the js file.
+* Thanks to the [Twitter.com] for the great API.
 
 == Screenshots ==
 

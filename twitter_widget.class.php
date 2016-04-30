@@ -59,7 +59,7 @@
 				, 'intentColor'			=> "#999999"
 				, 'showAvatar'			=> false
 				, 'border_rad'		=> false
-            , 'slide_style'               => 'list'
+                                , 'slide_style'               => 'list'
 		);
 		return $data;
 	}
@@ -77,7 +77,7 @@
 			wp_enqueue_style( 'farbtastic' );
 			wp_enqueue_script( 'farbtastic' );
 		}
-		//wp_enqueue_script('admin_js', plugins_url( '/js/admin_script.js' , dirname(__FILE__) ), array('jquery'));
+		wp_enqueue_script('admin_js', plugins_url( '/js/admin_script.js' , dirname(__FILE__) ), array('jquery'));
 		wp_enqueue_script('user_validate', plugins_url( '/js/validate.js' , dirname(__FILE__) ), array('jquery'));
 		
 	}
@@ -125,7 +125,7 @@
 		add_action('admin_enqueue_scripts', array(&$this, 'wpltf_enqueue_js'));
 		if(!is_admin())
 			add_action( 'wp_enqueue_scripts', array( &$this, 'wpltf_register_styles' ) );
-		$widget_data = array('classname' => 'wptt_TwitterTweets', 'description' => 'A easy widget which lets you add your latest tweets in just a few clicks on your website.' );
+		$widget_data = array('classname' => 'wptt_TwitterTweets', 'description' => 'A simple widget which lets you add your latest tweets in just a few clicks on your website.' );
 		parent::__construct('wptt_TwitterTweets', 'WP Twitter Feeds', $widget_data);
 	}
 	
@@ -194,8 +194,8 @@
 			$consumerSecret 	= trim($wpltf_wdgt_consumerSecret);
 			$accessToken 		= trim($wpltf_wdgt_accessToken);
 			$accessTokenSecret 	= trim($wpltf_wdgt_accessTokenSecret);
-			$replies_excl 	= $widget_replies_excl;
-			$consumerKey 		= trim($wpltf_wdgt_consumerKey);
+		  $replies_excl 	= $widget_replies_excl;
+			  $consumerKey 		= trim($wpltf_wdgt_consumerKey);
 			//$dataShowCount 		= ($wpltf_wdgt_dataShowCount != "true") ? "false" : "true";
 			$disp_screen_name	= ($wpltf_wdgt_disp_scr_name != "true") ? "false" : "true";
 			$intents_text = $wpltf_wdgt_twitterIntentsText; 
@@ -218,7 +218,7 @@
 				$accessTokenSecret
 			);
 			$totalToFetch = ($replies_excl) ? max(50, $tweets_count * 3) : $tweets_count;
-			
+		 
 			$fetchedTweets = $api_call->get(
 				'statuses/user_timeline',
 				array(
@@ -233,7 +233,7 @@
 
 			else :
 				$limitToDisplay = min($tweets_count, count($fetchedTweets));
-				
+				 
 				for($i = 0; $i < $limitToDisplay; $i++) :
 					$tweet = $fetchedTweets[$i];
 			    	$name = $tweet->user->name;
@@ -256,7 +256,10 @@
 			    		'time' => $uTime,
 			    		'tweet_id' => $tweet_id
 			    		);
+ 
+ 
 				endfor;
+				
 				set_transient($transName, $tweets, 60 * $timeto_store);
 				update_option($backupName, $tweets);
 				endif;
@@ -395,15 +398,12 @@ wp_print_scripts('ticker_script');
 	
 }
  function add_script_footer() { ?>	
-<?php //echo $this->widgetid; ?>
+
 		<script type="text/javascript">
 		jQuery(document).ready(function(){
 	 jQuery(".fetched_tweets").removeClass("light");			
 			
 			});	
-			
-			
-		
 		var height_li= jQuery(".fetched_tweets li").height();
 
 		height_li=height_li+15;

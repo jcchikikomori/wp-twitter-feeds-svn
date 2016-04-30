@@ -6,11 +6,9 @@
  *Author: Vivacity Infotech Pvt. Ltd.
  *Version: 1.4.8
  *Author URI: http://www.vivacityinfotech.net/
- *Author Email: support@vivacityinfotech.net
- *Text Domain: wp-twitter-feeds
- *Domain Path: /languages
+* Author Email: support@vivacityinfotech.net
  */
- /* Copyright 2014  Vivacity InfoTech Pvt. Ltd.  (email : support@vivacityinfotech.net)
+ /* Copyright 2014,2015,2016  Vivacity InfoTech Pvt. Ltd.  (email : support@vivacityinfotech.net)
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License, version 2, as
@@ -30,14 +28,13 @@ require_once('controller/twitter_widget.class.php');
 add_action( 'widgets_init', 'wpltf_reg_widget');
 function wpltf_reg_widget()
 {
-
 	register_widget("wptt_TwitterTweets");
 }
 
 add_filter('plugin_row_meta', 'add_meta_links',10, 2);
 function add_meta_links($links, $file) {
 	if ( strpos( $file, 'wp-latest-twitter-tweets.php' ) !== false ) {
-		$links[] = '<a href="http://vivacityinfotech.net/support">Support</a>';
+		$links[] = '<a href="http://wordpress.org/support/plugin/wp-twitter-feeds">Support</a>';
 		$links[] = '<a href="http://bit.ly/1icl56K">Donate</a>';
 	}
 	return $links;

@@ -21,17 +21,17 @@ font-weight:bold;
 
 
 <p>
-			<label for="<?php echo $this->get_field_id('title'); ?>">Widget Title: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($widget_title); ?>" /></label>
+			<label for="<?php echo sanitize_file_name($this->get_field_id('title')); ?>">Widget Title: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo sanitize_file_name($this->get_field_name('title')); ?>" type="text" value="<?php echo sanitize_file_name(esc_attr($widget_title)); ?>" /></label>
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id('name'); ?>">Twitter User Name: <input class="widefat twitter_user_name" id="<?php echo $this->get_field_id('name'); ?>" name="<?php echo $this->get_field_name('name'); ?>" type="text" value="<?php echo esc_attr($name); ?>" /></label>
+			<label for="<?php echo sanitize_file_name($this->get_field_id('name')); ?>">Twitter User Name: <input class="widefat twitter_user_name" id="<?php echo sanitize_file_name($this->get_field_id('name')); ?>" name="<?php echo sanitize_file_name($this->get_field_name('name')); ?>" type="text" value="<?php echo sanitize_file_name (esc_attr($name)); ?>" /></label>
 			<span class="widefat user-validator">Start entering your user name</span>
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id('store_time'); ?>">Tweets Cache Time (in minutes): <input class="widefat" id="<?php echo $this->get_field_id('store_time'); ?>" name="<?php echo $this->get_field_name('store_time'); ?>" type="text" value="<?php echo esc_attr($timeto_store); ?>" /></label>
+			<label for="<?php echo sanitize_file_name ($this->get_field_id('store_time')); ?>">Tweets Cache Time (in minutes): <input class="widefat" id="<?php echo sanitize_file_name ($this->get_field_id('store_time')); ?>" name="<?php echo sanitize_file_name ($this->get_field_name('store_time')); ?>" type="text" value="<?php echo sanitize_file_name (esc_attr($timeto_store)); ?>" /></label>
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id('tweets_cnt'); ?>">Number of Tweets to Fetch: <input class="widefat" id="<?php echo $this->get_field_id('tweets_cnt'); ?>" name="<?php echo $this->get_field_name('tweets_cnt'); ?>" type="text" value="<?php echo esc_attr($tweets_count); ?>" /></label>
+			<label for="<?php echo sanitize_file_name ($this->get_field_id('tweets_cnt')); ?>">Number of Tweets to Fetch: <input class="widefat" id="<?php echo sanitize_file_name ($this->get_field_id('tweets_cnt')); ?>" name="<?php echo $this->get_field_name('tweets_cnt'); ?>" type="text" value="<?php echo sanitize_file_name ( esc_attr($tweets_count)); ?>" /></label>
 		</p>
 		
 <h4  style="width:100%; text-align:center;">Twitter API Settings</h4>
@@ -81,7 +81,7 @@ font-weight:bold;
 				</p>
 				
 				<p>
-				    <input class="checkbox" type="checkbox" <?php checked( isset( $instance['replies_excl']), true ); ?> id="<?php echo $this->get_field_id( 'replies_excl' ); ?>" name="<?php echo $this->get_field_name( 'replies_excl' ); ?>" />
+				    <input class="checkbox" type="checkbox" <?php checked( isset( $instance['replies_excl']), true ); ?> id="<?php echo $this->get_field_id( 'replies_excl' ); ?>" value="true" name="<?php echo $this->get_field_name( 'replies_excl' ); ?>" />
 				    <label for="<?php echo $this->get_field_id( 'replies_excl' ); ?>">Exclude @replies</label>
 				</p>
 					<p>

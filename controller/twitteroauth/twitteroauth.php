@@ -81,6 +81,7 @@ class TwitterOAuth {
       return json_decode($response);
     }
     return $response;
+ 
   }
  
   function post($url, $parameters = array()) {
@@ -89,6 +90,7 @@ class TwitterOAuth {
       return json_decode($response);
     }
     return $response;
+      
   }
 
   function delete($url, $parameters = array()) {
@@ -148,6 +150,7 @@ class TwitterOAuth {
     $this->url = $url;
     curl_close ($ci);
     return $response;
+   
   }
 
   function getHeader($ch, $header) {
