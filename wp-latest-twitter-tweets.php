@@ -7,7 +7,7 @@
  * Version: 1.4.9
  * Author:       Vivacity Infotech Pvt. Ltd.
  * Author URI:   http://vivacityinfotech.net/
- *
+ * Author Email: info@vivacityinfotech.com
  * @package    WP Twitter Feeds
  * @since      1.0.0
  * @author     Vivacity Infotech Pvt. Ltd.
@@ -15,7 +15,7 @@
  * @license    http://www.gnu.org/licenses/gpl-2.0.html
   */
  /*  Copyright 2014-2015  Ashley Sheinwald  (email : ashley@planet-interactive.co.uk)
-
+	  Copyright 2016  Vivacity Infotech Pvt. Ltd.  (email : info@vivacityinfotech.com)
 		This program is free software; you can redistribute it and/or modify
 		it under the terms of the GNU General Public License, version 2, as
 		published by the Free Software Foundation.
