@@ -7,7 +7,7 @@
  * Version: 1.4.9
  * Author:       Vivacity Infotech Pvt. Ltd.
  * Author URI:   http://vivacityinfotech.net/
- * Author Email: info@vivacityinfotech.com
+ * Author Email: support@vivacityinfotech.com
  * @package    WP Twitter Feeds
  * @since      1.0.0
  * @author     Vivacity Infotech Pvt. Ltd.
