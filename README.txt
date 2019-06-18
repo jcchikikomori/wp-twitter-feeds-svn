@@ -1,9 +1,8 @@
-=== WP twitter feeds ===
+=== WP Twitter Feeds ===
 Contributors: vivacityinfotech.jaipur,planet-interactive
-Donate link: http://vivacityinfotech.net/paypal-donation/
 Tags:  wp twitter feeds,twitter feeds, twitter timeline,twitter widget,twitter widget for wordpress,wp twitter feeds widget,live tweets, live twitter feeds, tweets, feeds, wp twitter feeds plugin, twitter user tweets,  twitter 1.1, twitter api
-Requires at least: 3.5
-Tested up to: 5.0.2
+Requires at least: 4.0
+Tested up to: 5.2.1
 Stable tag: 1.5
 License: GPLv2 or later
 
@@ -43,8 +42,6 @@ The "WP Twitter Feeds" Widget will never require your Twitter password, because 
 
 Please take the time to let us and others know about your experiences by leaving a review, so that we can improve the plugin for you and other users.
 
-If you like the plugin please [Donate here](http://vivacityinfotech.net/paypal-donation/). 
-
 = Want More? =
 
 If You Want more functionality or some modifications, just drop us a line what you want and we will try to add or modify the plugin functions.
@@ -57,8 +54,6 @@ Installation consists of following steps:
 1. Upload "WP Twitter Tweets" to the /wp-content/plugins/ directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Place the "WP Twitter Tweets" Widget on your sidebar and add twitter username with API details of Twitter.
-
-Visit our <a href="http://vivacityinfotech.net/wordpress/plugins/wp-twitter-feeds-wordpress-plugin-by-vivacity/" target="_blank">demo page</a> for more information.
 
 == Frequently Asked Questions ==
 
