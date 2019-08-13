@@ -1,0 +1,14 @@
+{
+  "name": "gorated/wp-twitter-feeds",
+  "description": "Cove Manila version of WP Twitter Feeds (imported from SVN trunk)",
+  "keywords": ["wordpress", "plugin"],
+  "homepage": "https://wordpress.org/plugins/wp-twitter-feeds/",
+  "authors": [{
+    "name": "Team Startbit",
+    "homepage": "https://www.startbitsolutions.com/"
+  }],
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=5.6"
+  }
+}
